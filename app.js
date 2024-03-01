@@ -21,6 +21,7 @@ app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
 
 // Set Access-Control-Allow-Origin *
+// This is for cross-origin requests
 app.use(cors());
 //app.use(cors({ origin: "http://www.example.com" }));
 
